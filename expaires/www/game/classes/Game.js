@@ -110,5 +110,6 @@ Game.prototype.start = function () {
 
 Game.prototype.finish = function () {
     this.board.clear();
-    sessionStorage.setItem('score', JSON.stringify(this.getScore()));
+    //sessionStorage.setItem('score', JSON.stringify(this.getScore()));
+    localStorage.setItem('score', JSON.stringify(this.getScore()));
 }
