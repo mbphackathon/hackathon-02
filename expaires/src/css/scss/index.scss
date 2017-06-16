@@ -12,17 +12,15 @@ html, body {
   height: 100%;
 }
 
-body {
-  font-family: 'open_sansregular', sans-serif;
-  font-size: 14px;
-  color: $grey-txt;
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   font-family: 'open_sanscondensed_light', sans-serif;
   font-size: 1.8em;
+}
+
+md-content{
+  background-image: url('../img/fond.png');
+  background-size: 414px 736px;
+  background-repeat: no-repeat;
 }
 
 .bg-header {
