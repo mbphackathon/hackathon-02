@@ -24,7 +24,7 @@ var test00={
         },
 // Partie algèbre
         {
-            "question": "Combien fait 7 x 8 ?",
+            "question": "Combien font 7 x 8 ?",
             "dimension": "algebre",
             "answers": [
                 {
@@ -214,7 +214,7 @@ var test00={
         },
 
         {
-            "question": "Combien font 258+84-78+52 ?",
+            "question": "Combien font 258 + 84 - 78 + 52 ?",
             "dimension": "arithmetique",
             "answers": [
                 {

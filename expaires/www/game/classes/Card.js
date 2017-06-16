@@ -17,11 +17,11 @@ Card.prototype.renderQuestion=function(question, container)
 
     if(question.getCaption().length>30) {
         var fontSize=14;
-        var paddingTop=8;
+        var paddingTop=15;
     }
     else if(question.getCaption().length>20) {
-        var fontSize=16;
-        var paddingTop=8;
+        var fontSize=19;
+        var paddingTop=30;
     }
 
 
