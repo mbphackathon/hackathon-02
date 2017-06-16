@@ -35,7 +35,7 @@ html, body {
     cursor: pointer;
     display: inline-block;
     font-family: verdana, sans-serif;
-}
+  }
 
 .card .content {
     margin: 10px;
@@ -67,7 +67,7 @@ html, body {
 }
 
 .card.answer:hover .front {
-    box-shadow: 3px 3px 10px #000;
+    box-shadow: 6px 6px 6px #000;
     transform: rotateY(-20deg) rotateZ(5deg);
     transition: all 0.3s;
 }

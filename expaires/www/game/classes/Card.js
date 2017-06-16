@@ -97,9 +97,6 @@ Card.prototype.renderAnswer=function(answer, container)
 
 
     $(this.element).click(function() {
-
-
-
         $(this.element).find('.flip-container').addClass('flip');
 
         this.flipCards();
@@ -107,11 +104,17 @@ Card.prototype.renderAnswer=function(answer, container)
         setTimeout(function() {
             this.element.manager.saveAnswer(this.answer);
         }.bind(this), 700);
-
-
-
-
     }.bind(this))
+
+
+    $(this.element).mouseover(function() {
+        $(this.element).find('.front').addClass('icon');
+    }.bind(this));
+
+    $(this.element).mouseout(function() {
+        $(this.element).find('.front').removeClass('icon');
+    }.bind(this))
+
 
 
     container.appendChild(this.element);
