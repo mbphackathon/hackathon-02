@@ -1,6 +1,27 @@
 var test00={
     "questions": [
-
+        {
+            "question": "ABC est un triangle rectangle en A tel que AB=3 et AC=4. Quel est le cosinus de l'angle C ?",
+            "dimension": "geometrie",
+            "answers": [
+                {
+                    "caption": "0,6",
+                    "value": 0
+                },
+                {
+                    "caption": "0,65",
+                    "value": 0
+                },
+                {
+                    "caption": "0,75",
+                    "value": 0
+                },
+                {
+                    "caption": "0.8",
+                    "value": 4
+                }
+            ]
+        },
 // Partie algèbre
         {
             "question": "Combien fait 7 x 8 ?",
@@ -165,28 +186,7 @@ var test00={
             ]
         },
 
-        {
-            "question": "ABC est un triangle rectangle en A tel que AB=3 et AC=4. Quel est le cosinus de l'angle C ?",
-            "dimension": "geometrie",
-            "answers": [
-                {
-                    "caption": "0,6",
-                    "value": 0
-                },
-                {
-                    "caption": "0,65",
-                    "value": 0
-                },
-                {
-                    "caption": "0,75",
-                    "value": 0
-                },
-                {
-                    "caption": "0.8",
-                    "value": 4
-                }
-            ]
-        },
+
 
 //Partie arithmétique
 

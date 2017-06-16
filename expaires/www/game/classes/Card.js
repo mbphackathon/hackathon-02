@@ -1,6 +1,7 @@
 function Card(screen)
 {
     this.screen=screen;
+    this.fontSize=20;
 }
 
 
@@ -10,14 +11,28 @@ Card.prototype.renderQuestion=function(question, container)
     this.element.setAttribute('class', 'card question');
 
 
+
+    var fontSize=25;
+    var paddingTop=40;
+
+    if(question.getCaption().length>30) {
+        var fontSize=14;
+        var paddingTop=8;
+    }
+    else if(question.getCaption().length>20) {
+        var fontSize=16;
+        var paddingTop=8;
+    }
+
+
     this.element.innerHTML=
         '<div class="flip-container">'+
             '<div class="flipper">'+
-                '<div class="front"><div class="caption">'+
+                '<div class="front"><div class="caption" style="font-size:'+fontSize+'px; padding-top: '+paddingTop+'px">'+
                     question.getCaption()+
                 '</div></div>'+
             '<div class="back">'+
-                '<!-- back content -->'+
+        '<div style="background-image: url(picto/carte-verte.png); height:100%; width:100%"></div>'+
             '</div>'+
         '</div>'+
     '</div>';
@@ -31,6 +46,7 @@ Card.prototype.saveAnswer=function(answer) {
 
     //console.debug(answer);
 }
+
 
 
 Card.prototype.destroy=function(timeout) {
@@ -53,7 +69,13 @@ Card.prototype.renderAnswer=function(answer, container)
     var pictoIndex=Math.round(1+Math.random()*3);
 
 
-    var bgURL='picto/carte-retournee.png';
+    if(answer.getScore()) {
+        var bgURL='picto/carte-verte.png';
+    }
+    else {
+        var bgURL='picto/carte-retournee.png';
+    }
+
 
 
     this.element.innerHTML=
@@ -76,8 +98,15 @@ Card.prototype.renderAnswer=function(answer, container)
 
     $(this.element).click(function() {
 
+
+
         $(this.element).find('.flip-container').addClass('flip');
-        this.element.manager.saveAnswer(this.answer);
+
+        this.flipCards();
+
+        setTimeout(function() {
+            this.element.manager.saveAnswer(this.answer);
+        }.bind(this), 700);
 
 
 
@@ -86,5 +115,19 @@ Card.prototype.renderAnswer=function(answer, container)
 
 
     container.appendChild(this.element);
+
+}
+
+
+
+Card.prototype.flip=function(timeout) {
+    setTimeout(function() {
+        $(this.element).find('.flip-container').addClass('flip')
+    }.bind(this), timeout);
+}
+
+Card.prototype.flipCards=function() {
+    //this.screen.returnQuestionCard();
+    this.screen.returnCards();
 
 }
