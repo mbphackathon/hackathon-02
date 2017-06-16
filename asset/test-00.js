@@ -2,6 +2,7 @@ var test00={
   "questions": [
         {
             "question": "La question 0",
+            "dimension": "dimension0",
             "answers": [
                 {
                     "caption": "La réponse 0",
@@ -24,6 +25,7 @@ var test00={
 
       {
           "question": "La question 1",
+          "dimension": "dimension1",
           "answers": [
               {
                   "caption": "La réponse 0",

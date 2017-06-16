@@ -27,11 +27,24 @@ Game.prototype.getCurrentQuestion = function () {
 
 Game.prototype.getScore = function () {
 
-    var score = 0;
+    var score = {};
+
     for (var index = 0; index < this.questions.length; index++) {
-        score += this.questions[index].getScore();
+        score[this.questions[index].getDimension()] = 0;
+    }
+
+
+    for (var index = 0; index < this.questions.length; index++) {
+        score[this.questions[index].getDimension()] += this.questions[index].getScore();
     }
     return score;
+}
+
+Game.prototype.renderScreen = function () {
+    var screen = new Screen(
+        this.getCurrentQuestion()
+    );
+
 }
 
 

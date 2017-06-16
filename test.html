@@ -13,6 +13,7 @@
 
 
 <script src="classes/Game.js"></script>
+<script src="classes/Screen.js"></script>
 <script src="classes/Player.js"></script>
 <script src="classes/Board.js"></script>
 <script src="classes/Card.js"></script>
@@ -23,12 +24,19 @@
 
 
 <script src="asset/test-00.js"></script>
+<script src="asset/prof/00.js"></script>
 
 <script>
     var game=new Game();
     game.load(test00);
 
-    alert(game.getScore());
+
+    game.renderScreen();
+
+
+    console.debug(game.getScore())
+
+    //alert(game.getScore());
 
 
 

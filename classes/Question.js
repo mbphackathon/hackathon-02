@@ -8,7 +8,9 @@ function Question() {
 };
 
 Question.prototype.loadFromJSON = function (json) {
+
     this.caption = json.question;
+    this.dimension=json.dimension;
     for (var index = 0; index < json.answers.length; index++) {
         var answer = new Answer();
         answer.loadFromJSON(json.answers[index]);
