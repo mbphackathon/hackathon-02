@@ -77,7 +77,7 @@ Card.prototype.renderAnswer=function(answer, container)
     $(this.element).click(function() {
 
         $(this.element).find('.flip-container').addClass('flip');
-        //this.manager.saveAnswer(this.answer);
+        this.manager.saveAnswer(this.answer);
 
 
 
