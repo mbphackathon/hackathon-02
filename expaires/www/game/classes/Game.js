@@ -117,5 +117,5 @@ Game.prototype.finish = function () {
         localStorage.getItem('score')
     );
 
-    document.location='http://localhost:8888/hackathon-02/expaires/www/#!/view1';
+    //document.location='http://localhost:8888/hackathon-02/expaires/www/#!/view1';
 }

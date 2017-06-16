@@ -41,10 +41,7 @@ Card.prototype.renderQuestion=function(question, container)
 }
 
 Card.prototype.saveAnswer=function(answer) {
-
     this.screen.saveAnswer(answer);
-
-    //console.debug(answer);
 }
 
 
@@ -100,10 +97,7 @@ Card.prototype.renderAnswer=function(answer, container)
         $(this.element).find('.flip-container').addClass('flip');
 
         this.flipCards();
-
-        setTimeout(function() {
-            this.element.manager.saveAnswer(this.answer);
-        }.bind(this), 700);
+        this.element.manager.saveAnswer(this.element.answer);
     }.bind(this))
 
 
