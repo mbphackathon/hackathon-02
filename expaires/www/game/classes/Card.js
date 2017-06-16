@@ -53,14 +53,17 @@ Card.prototype.renderAnswer=function(answer, container)
     var pictoIndex=Math.round(1+Math.random()*3);
 
 
+    var bgURL='picto/carte-retournee.png';
+
+
     this.element.innerHTML=
-        '<div class="flip-container">'+
+        '<div class="flip-container" >'+
         '<div class="flipper">'+
         '<div class="front"><img src="picto/picto'+pictoIndex+'.png" class="picto-00"/><div class="caption">'+
         answer.getCaption()+
         '</div><img src="picto/picto'+pictoIndex+'.png" class="picto-01"/></div>'+
         '<div class="back">'+
-        '<!-- back content -->'+
+            '<div style="background-image: url('+bgURL+'); height:100%; width:100%"></div>'+
         '</div>'+
         '</div>'+
         '</div>';
@@ -68,20 +71,18 @@ Card.prototype.renderAnswer=function(answer, container)
     this.element.manager=this;
     this.element.answer=answer;
 
-    this.element.onclick=function() {
-        $(this.element).find('.flip-container').addClass('flip');
 
 
-    }.bind(this);
 
     $(this.element).click(function() {
 
-        this.manager.saveAnswer(this.answer);
+        $(this.element).find('.flip-container').addClass('flip');
+        //this.manager.saveAnswer(this.answer);
 
-        //element.classList.toggle("flip")
 
 
-    }.bind(this.element))
+
+    }.bind(this))
 
 
     container.appendChild(this.element);

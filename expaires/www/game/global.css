@@ -10,18 +10,6 @@ html, body {
     box-sizing: border-box;
     padding-top: 140px;
 
-    /*
-    background: rgba(164,179,87,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
-    */
-
-
     height:960px;
     width: 540px;
 }

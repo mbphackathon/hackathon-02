@@ -12,8 +12,8 @@
 .flip-container, .front, .back {
 
 
-    width: 160px;
-    height: 200px;
+    width: 143px;
+    height: 209px;
 }
 
 
@@ -37,9 +37,6 @@
 /* front pane, placed above back */
 .front {
 
-    border-radius: 10px;
-    border:solid 10px #FFF;
-
 
     background: rgba(226,226,226,1);
     background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(140,140,140,1) 100%);
@@ -59,12 +56,6 @@
 
 /* back, initially hidden pane */
 .back {
-
-
-    border-radius: 20px;
-    border:solid 10px #FFF;
-
-    background-color:#FAF;
     transform: rotateY(180deg);
 }
 
