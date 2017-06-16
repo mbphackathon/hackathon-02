@@ -112,4 +112,10 @@ Game.prototype.finish = function () {
     this.board.clear();
     //sessionStorage.setItem('score', JSON.stringify(this.getScore()));
     localStorage.setItem('score', JSON.stringify(this.getScore()));
+
+    console.debug(
+        localStorage.getItem('score')
+    );
+
+    document.location='http://localhost:8888/hackathon-02/expaires/www/#!/view1';
 }
