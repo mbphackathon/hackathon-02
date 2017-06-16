@@ -1,7 +1,21 @@
 <section id="view1" layout="column">
-    <div layout="column">
-        <p>view1</p>
+    <div id="evaluation">
+        <h2>Votre évalutation</h2>
+        <p>Suite à votre éaluation, voici votre niveau :</p>
+        <div id="niveau">
+            <p>{{ctrl.level}}</p>
+        </div>
     </div>
-    <button ui-sref="view2">view2</button>
-    <button ui-sref="view3">view3</button>
+    <div id="skills">
+        <h2>Vos points forts</h2>
+        <div ng-repeat="(key,val) in ctrl.score">
+            <p><span class="img"><img src="img/{{key}}.png"></span>{{key}} : <span class="note">{{val.score}}</span></p>
+        </div>
+    </div>
+    <div id="prof">
+        <p>Nous vous proposons pour vous aider :</p>
+        <div id="button">
+            <a href="{{ctrl.prof}}">expert</a>
+        </div>
+    </div>
 </section>

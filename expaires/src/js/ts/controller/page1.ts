@@ -2,6 +2,9 @@ module HabitatPresto.controller {
     export class Page1 extends HabitatPresto.controller.Base {
         public static $inject = ['$rootScope', '$state', 'wsHttp', '$mdDialog', 'storage'];
         public status: any;
+        public level:string;
+        public prof:string;
+        public score:any;
 
         constructor(public $rootScope,
                     public $state,
@@ -73,10 +76,10 @@ module HabitatPresto.controller {
             };
 
             let note = this.getNote();
-            let level = this.getLevel(note);
-            let prof = this.getProf(level);
-
-            console.log(level, prof, note);
+            this.score = this.storage.readObject('score');
+            console.log(this.score);
+            this.level = this.getLevel(note);
+            this.prof = this.getProf(this.level);
         }
 
         public getNote():any{

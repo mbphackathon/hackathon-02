@@ -2,5 +2,70 @@
 @import '../mixins';
 
 #view1 {
+  #evaluation{
+    text-align: center;
+    margin: 81px 10px 0px;
+
+    h2 {
+      color: #44311f;
+      font-size: 34px;
+    }
+
+    p {
+      font-weight: bold;
+      color: #fff1d0;
+    }
+
+    #niveau {
+      border: 2px solid #f5e012;
+      border-radius: 10px;
+      width: 149px;
+      margin: auto;
+      box-shadow: 2px 2px 9px;
+    }
+  }
+
+  #skills{
+    text-align: center;
+    margin: 0px 10px 0px;
+
+    h2 {
+      color: #44311f;
+      font-size: 34px;
+    }
+
+    p {
+      font-weight: bold;
+      color: #fff1d0;
+    }
+
+    .img {
+      width: 37px;
+    }
+
+    .note{
+      font-size: 30px;
+    }
+  }
+
+  #prof {
+    h2 {
+      color: #44311f;
+      font-size: 34px;
+    }
+
+    p {
+      font-weight: bold;
+      color: #fff1d0;
+    }
+    text-align: center;
+
+    #button {
+      border: 2px solid #f5e012;
+      border-radius: 10px;
+      width: 149px;
+      margin: auto;
+    }
+  }
 
 }
