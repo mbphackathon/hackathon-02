@@ -1,0 +1,15 @@
+.dp-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent url('../img/sprites.png') 0 0 no-repeat;
+
+  &.dp-tel {
+    width: 15px;
+    height: 20px;
+  }
+  &.dp-web {
+    background-position: -20px 0;
+    width: 20px;
+    height: 20px;
+  }
+}

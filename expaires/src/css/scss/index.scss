@@ -1,0 +1,91 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'buttons';
+@import 'sprites';
+@import 'pages/view1';
+@import 'pages/view2';
+@import 'pages/view3';
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'open_sansregular', sans-serif;
+  font-size: 14px;
+  color: $grey-txt;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'open_sanscondensed_light', sans-serif;
+  font-size: 1.8em;
+}
+
+.bg-header {
+  background: url('../img/header.jpg') no-repeat center center;
+  display: inline-block;
+  vertical-align: middle;
+
+  @include background-size(cover);
+
+  p {
+    color: $white;
+    font-family: 'open_sanscondensed_light', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 5px;
+  }
+}
+
+/*.bg-toolbar {
+  background: url('../img/logo.png') no-repeat center center;
+  display: inline-block;
+  vertical-align: middle;
+}*/
+
+.contact-block {
+  background-color: $blue-dark;
+
+  p {
+    color: $white;
+  }
+  padding: 10px;
+}
+
+.button{
+  text-transform : none;
+  /*padding: 3px 23px;*/
+  margin: auto;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.logoSignin {
+  width: 305px;
+}
+
+.loader{
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
