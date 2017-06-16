@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'mixins';
+
+a.md-button.button {
+  font-size: 16px;
+  color: $white;
+  display: inline-block;
+  /*padding: 3px 15px;*/
+  margin: auto;
+  text-transform: none;
+
+  &.btn-orange {
+    font-family: 'open_sanscondensed_light', sans-serif;
+    font-size: 1.6em;
+    color: $white;
+    background-color: $orange;
+    text-decoration: none;
+
+    md-icon {
+      color: $white;
+    }
+
+    &:hover, &:active, &:visited {
+      color: $white;
+      background-color: $orange-hover;
+      text-decoration: none;
+    }
+  }
+  &.btn-blue {
+    color: $white;
+    background-color: $blue;
+    text-decoration: none;
+
+    md-icon {
+      color: $white;
+    }
+
+    &:hover, &:active, &:visited {
+      color: $white;
+      background-color: $blue-hover;
+      text-decoration: none;
+    }
+  }
+  &.btn-blue-dark {
+    color: $white;
+    background-color: $blue-dark;
+    text-decoration: none;
+    border: 1px solid $white;
+
+    md-icon {
+      color: $white;
+    }
+
+    &:hover, &:active, &:visited {
+      color: $blue-dark;
+      background-color: $white;
+      text-decoration: none;
+      border: 1px solid $blue-dark;
+
+      md-icon {
+        color: $blue-dark;
+      }
+    }
+  }
+  &.btn-white {
+    color: $blue-dark;
+    background-color: $white;
+    text-decoration: none;
+    border: 1px solid $blue-dark;
+
+    md-icon {
+      color: $blue-dark;
+    }
+
+    &:hover, &:active, &:visited {
+      color: $white;
+      background-color: $blue-dark;
+      text-decoration: none;
+      border: 1px solid $white;
+
+      md-icon {
+        color: $white;
+      }
+    }
+  }
+}
+
+.btn-txt {
+  font-size: 12px;
+  color: $grey-txt;
+
+  &:hover, &:active, &:visited {
+    color: $orange;
+    background-color: transparent;
+    text-decoration: none;
+  }
+}

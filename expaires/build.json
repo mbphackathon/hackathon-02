@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "keystore": "devispresto.keystore",
+      "storePassword": "devispresto",
+      "alias": "devispresto",
+      "password" : "devispresto",
+      "keystoreType": ""
+    }
+  }
+}
