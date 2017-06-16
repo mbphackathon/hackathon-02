@@ -1,0 +1,61 @@
+<!doctype html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="flip.css"/>
+</head>
+
+
+<body>
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src="classes/Game.js"></script>
+
+<script src="classes/Screen.js"></script>
+
+<script src="classes/Player.js"></script>
+<script src="classes/Board.js"></script>
+
+
+
+<script src="classes/Card.js"></script>
+
+<script src="classes/Question.js"></script>
+<script src="classes/Answer.js"></script>
+
+
+<script src="classes/Prof.js"></script>
+
+
+<script src="asset/test-00.js"></script>
+<script src="asset/prof/00.js"></script>
+
+<script>
+
+
+    var game=new Game();
+    game.load(test00);
+
+
+    game.render();
+
+    game.start();
+
+
+
+</script>
+
+
+</body>
+</html>
